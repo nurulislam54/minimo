@@ -1,0 +1,153 @@
+/* basic css */
+@font-face{
+    font-family: PlayfairDisplay-Bold;
+    src: url(../fonts/PlayfairDisplay-Bold.ttf);
+}
+@font-face{
+    font-family: PlayfairDisplay-Regular;
+    src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+@font-face{
+    font-family: Ubuntu-light;
+    src: url(../fonts/Ubuntu-light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    font-family: 'PlayfairDisplay-Regular', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #626262;
+}
+
+h1,
+h2,h3 {
+    font-family: 'PlayfairDisplay-Bold', serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+.inner-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* header css */
+.header-content {
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    max-width: 120px;
+    vertical-align: middle;
+}
+
+.navbar {
+    float: right;
+    color: #858181;
+}
+
+.navbar li {
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.navbar li:first-child{
+    margin-left: 0;
+}
+.navbar li a {
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: #000E43;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.navbar li:last-child a {
+    padding-right: 0;
+}
+
+
+/* hero section css */
+.banner-content{
+    margin-top: 30px;
+}
+.banner-content h2{
+    font-family: Ubuntu-light;
+    font-weight: 300;
+    font-size: 20px;
+}
+.banner-content h3{
+    font-size: 30px;
+    margin: 20px 0;
+}
+.banner-content .comment-link{
+    margin-top: 30px;
+}
+.banner-content .comment-link a{
+    color: #626262;
+    text-transform: uppercase;
+}
+
+/* footer css */
+footer {
+    background: #f0f0f0;
+    padding: 24px 0;
+}
+
+/* responsive css */
+
+@media screen and (max-width: 767px) {
+
+    .logo,
+    .navbar,
+    .navbar li{
+        width: auto;
+        float: none;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        padding: 5px 10px;
+    }
+}
